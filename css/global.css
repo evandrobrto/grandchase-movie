@@ -1,0 +1,52 @@
+@import url(header.css);
+@import url(background.css);
+@import url(main.css);
+
+
+/* Setamos as seguintes propriedades para retirar as propriedades padrão do navegador. */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Aqui setamos algumas cores, para melhorar a facilidade de estilizar butões, letras, etc. */
+
+:root {
+    --text: #EDF1F7;
+    --red: #C51212;
+    --blue: #0041C2;
+    --green: #14B02D;
+    --yellow: #ffc12b;
+}
+
+/* Linkamos no HEAD do HTML, fontes do Google e utilizaremos a fonte "Mukta", sans-serif. Utilizando na tag color a variável que setamos no root. */
+
+body,
+button,
+a {
+    color: var(--text);
+    font: 400 1rem "Mukta", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Seção APP */
+/* Setamos o display flex, para utilizar os elementos em coluna. */
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aqui podia ser row, dependendo do layout desejado */
+    min-height: 100vh; /* Para ocupar toda a altura da visualização */
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+
