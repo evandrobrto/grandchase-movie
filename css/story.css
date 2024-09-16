@@ -1,0 +1,69 @@
+/* BackGround */
+    /* Setaremos a imagem, com a tag background-image, para que ela fique como fundo da página, setamos o "no-repeat", para a imagem não repetir. Para fazer com que a imagem de fundo preencha a tela inteira, usamos a propriedade background-size: cover;. Fixamos a tag e colocamos um z-index, para que a imagem fique por trás do demais elementos.*/
+
+    #bg-img{
+        background-image: url(../assets/img/imgStory.webp);
+        background-image: no-repeat;
+        background-size: cover;
+        position: fixed;
+        z-index: -1;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }  
+        /* Aqui para que fique com o mesmo fundo meio escuro da página principal, setamos as mesma tags, porém com diferente na opacidade. */ 
+    #bg-img img{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(109deg, rgba(10, 12, 16, 0.87) 15%, rgba(34, 37, 44, 0.4) 50%, rgba(23, 26, 34, 0.99) 85%);
+         z-index: 1; 
+    }
+
+/* Main para História - Seguirá com a mesma inciativa, só mudando algumas coisas. */
+    /* As tags: "Display, flex-diretion e align-items" Servem para alinhar os elementos e colocarem um debaixo do outro. O restante das tags, são para ocupar toda a parte do container e página. */
+
+#app-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 100vh; /* Para ocupar toda a altura da visualização. */
+    width: 100%;
+    height: 100%;
+}
+
+    /* Alinhamento da imagem e texto, um abaixo do outro, com a tag "max-width" fazendo com que os elementos ocupem o max de largura: 1440px. */
+.main-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    max-width: 1440px;
+}
+
+    /* Estilização do texto da história, com uma font-family do Google Fonts. */
+.text-story{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Alinhando os textos e setando o tamanho do mesmo, colocando um espaço nos parágrafos. */
+.text-story h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.text-story h2{
+    font-size: 20px;
+}
+
+.text-story p{
+    text-indent: 3em;
+    font-size: 17px;
+}

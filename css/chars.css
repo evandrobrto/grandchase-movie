@@ -1,0 +1,34 @@
+/* BackGround */
+    /* Setaremos a imagem, com a tag background-image, para que ela fique como fundo da página, setamos o "no-repeat", para a imagem não repetir. Para fazer com que a imagem de fundo preencha a tela inteira, usamos a propriedade background-size: cover;. Fixamos a tag e colocamos um z-index, para que a imagem fique por trás do demais elementos.*/
+
+    #bg-img-chars{
+        background-image: url(../assets/img/chars/bwl3sikh.png);
+        background-image: no-repeat;
+        background-size: cover;
+        position: fixed;
+        z-index: -1;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }  
+        /* Aqui para que fique com o mesmo fundo meio escuro da página principal, setamos as mesma tags, porém com diferente na opacidade. */ 
+    #bg-img-chars img{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(109deg, rgba(10, 12, 16, 0.87) 15%, rgba(34, 37, 44, 0.4) 50%, rgba(23, 26, 34, 0.99) 85%);
+         z-index: 1; 
+    }
+    
+    /* Body - Main */
+    #app {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Aqui podia ser row, dependendo do layout desejado */
+        min-height: 100vh; /* Para ocupar toda a altura da visualização */
+        width: 100%;
+        height: 100%;
+    }
