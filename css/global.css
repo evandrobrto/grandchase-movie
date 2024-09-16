@@ -1,7 +1,9 @@
 @import url(header.css);
 @import url(background.css);
 @import url(main.css);
-
+@import url(story.css);
+@import url(chars.css);
+@import url(kingdows.css);
 
 /* Setamos as seguintes propriedades para retirar as propriedades padrão do navegador. */
 * {
@@ -49,4 +51,6 @@ button:hover {
 }
 
 /* Footer */
+
+
 
