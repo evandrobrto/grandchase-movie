@@ -1,7 +1,7 @@
 Site para um possível filme do jogo Grand Chase
 
 
-💻 Projeto
+💻 Projeto--------------------------
 Este projeto é uma avaliação onde o tema abordado é o jogo GranChase, utilizando o HTML e CSS.
 --------------------------
 🚀 Tecnologias
