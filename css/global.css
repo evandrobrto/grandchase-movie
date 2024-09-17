@@ -16,9 +16,9 @@
 
 :root {
     --text: #EDF1F7;
-    --red: #C51212;
+    --red: #8511c9;
     --blue: #0041C2;
-    --green: #14B02D;
+    --green: #eef0ee;
     --yellow: #ffc12b;
 }
 
@@ -51,6 +51,11 @@ button:hover {
 }
 
 /* Footer */
+
+@media (min-width: 1066px)
+{ .container { padding-left: calc((100% - 960px) / 2); padding-right: calc((100% - 960px) / 2); } }
+@media (min-width: 1440px)
+{ .container { padding-left: calc((100% - 1200px) / 2); padding-right: calc((100% - 1200px) / 2); } } 
 
 
 
