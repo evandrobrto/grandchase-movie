@@ -22,3 +22,143 @@
         background: linear-gradient(109deg, rgba(10, 12, 16, 0.87) 15%, rgba(34, 37, 44, 0.4) 50%, rgba(23, 26, 34, 0.99) 85%);
          z-index: 1; 
     }
+
+    #app-kingdoms{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        min-height: 100vh; /* Para ocupar toda a altura da visualização. */
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Estilização imagem left */
+
+    .main-kingdows{
+        display: relative;
+        margin-top: auto;
+        
+    }
+
+
+    .left-kingdows-serdin{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: left;
+        width: 300px;
+        height: 300px;
+        background-image: url(../assets/img/imgstory/Serdin.webp);
+        background-size: cover;
+        object-fit: cover;
+        margin-right: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-kingdows-calnat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: left;
+        width: 300px;
+        height: 300px;
+        background-image: url(../assets/img/imgstory/canaba.png);
+        background-size: cover;
+        object-fit: cover;
+        margin-right: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+
+    /* Estilização imagem righ */
+
+    .right-kingdows-canaban{
+        display: flex;
+        float: right;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+        background-image: url(../assets/img/imgstory/02_Outer_Wall_of_Serdin.webp);
+        background-size: cover;
+        object-fit: cover;
+        margin-left: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden; /* Para garantir que o conteúdo não ultrapasse as bordas */
+    }
+
+    .right-kingdows-reinodaluz{
+        display: flex;
+        float: right;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+        background-image: url(../assets/img/imgstory/reinodaluz.webp);
+        background-size: cover;
+        object-fit: cover;
+        margin-left: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden; /* Para garantir que o conteúdo não ultrapasse as bordas */
+    }
+
+    /*  Estilizando os textos  */
+
+    /* left-kingdows */ 
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        font-family:  "PT Sans", sans-serif;
+        font-style: normal;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    
+    /* right-kingdows */
+    .text-kingdows {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinha o texto à esquerda */
+        color: #fff; /* Cor do texto, ajuste conforme necessário */
+        width: calc(78% - 10px); /* Ajuste para dar espaço para a imagem */
+        background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para o texto */
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+    
+    /* Ajuste do título e parágrafo dentro do texto */
+    .text-kingdows h1,
+    .text-kingdows p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .text-kingdows h1 {
+        font-size: 1.5em; /* Ajuste o tamanho do título conforme necessário */
+        margin-bottom: 10px;
+    }
+    
+    .text-kingdows p {
+        font-size: 1em; /* Ajuste o tamanho do parágrafo conforme necessário */
+    }
+    

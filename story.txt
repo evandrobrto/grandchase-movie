@@ -1,5 +1,16 @@
 Ideias 
 
+@media (min-width: 1066px)
+{ .container { padding-left: calc((100% - 960px) / 2); padding-right: calc((100% - 960px) / 2); } }
+@media (min-width: 1440px)
+{ .container { padding-left: calc((100% - 1200px) / 2); padding-right: calc((100% - 1200px) / 2); } } 
+
+Explicação das Alterações - chars
+flex-wrap: wrap: No #char-container, permite que os itens se movam para a linha seguinte quando o espaço não for suficiente.
+gap: 20px: Adiciona espaço entre os itens, ajudando a evitar que eles fiquem muito colados uns aos outros.
+width: calc(33.333% - 20px): Define a largura de cada main-char para ocupar aproximadamente um terço da largura disponível, descontando o espaço entre os itens. Ajuste conforme necessário para garantir que os itens se ajustem corretamente.
+max-width: 266px: Garante que a largura máxima dos itens não ultrapasse o valor especificado, mantendo a consistência visual.
+
 1- Ideia para o História, utilizar o granchase weblogo no meio da página, após isso, colocar a história
 do granchase.
 
