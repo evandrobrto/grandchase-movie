@@ -1,53 +1,54 @@
-/* Colocaremos a mesma regra do "Header". */
-    /* Setamos flex:1, para que ocupe toda a página. E utilizando justify-content, para que fiquem de lados opostos. */
+/* MAIN */
+    /* Setamos flex:1, para que ocupe toda a área disponivel. Centralizamos, com o display e align-items. E utilizando justify-content, para que fiquem de lados opostos. */
     main {
-        flex: 100%;  
-        display: flex;
+        flex: 1;  
+        display: flex; 
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+
+        width: 100%;    /* Mesma regra do Header */
         max-width: 1440px;
         }
+
     /* Estilizando logo e texto */ 
-    .main-info{
+    .main-info{ /* Para que o parágrafo não fique tão grande. */
         width: 100%;
         max-width: 570px;
     }
     
-    .main-info p{
+    .main-info p{ /* Com fonte de 17px e setando o espaçamento da margens, 20px em cima, 0 laterais e 28px embaixo.  */
         font-size: 17px;
         margin: 20px 0 28px;
     }
     
 
-    /* Estilizando butões e ancora. */
+    /* Estilizando botões e ancora. */
 
-    .main-info div{
+    .main-info div{ /* Espaçando o link e o botão. */
         display: flex;
         column-gap: 32px;
     }
 
-    .main-info div a, .main-info div button{
-        width: 100%;
-        padding: 10px 0;
-        border-radius:3px;
+    .main-info div a, .main-info div button{ /* Estilização em comum. */
+        width: 100%; /* Largura de 100% do elemento. */
+        padding: 10px 0; /* 10px em cima e 0 laterais */
+        border-radius:3px; /* Bordas */
     
-        font-size: 16px;
-        font-weight: 600;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 0.3px;
+        font-size: 16px; /* Fonte */
+        font-weight: 600; /* Peso de 600 */
+        text-align: center; /* Centralizando o texto. */
+        text-transform: uppercase; /* Caixa alta */
+        letter-spacing: 0.3px; /* Definindo o espaçamento dos textos de 0.3px */
     
-        transform: skew(-10deg);
     }
     
-    .main-info div a{
+    .main-info div a{ /* Fundo do Link */
         background: var(--red);
     }
 
 
-    .main-info div button{
+    .main-info div button{ /* Fundo do Botão  */
         background: transparent;
-        border: 1px solid var(--green);
+        border: 1px solid var(--green); /* Com borda */
     }
 

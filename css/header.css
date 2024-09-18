@@ -1,99 +1,104 @@
-/* Header - Aqui colocamos os elementos um ao lado do outro. Espaçando eles, ou seja, para que o menu fique de um lado e as redes sociais do outro. */
+/* Header 
+Espaçando eles, ou seja, para que o menu fique de um lado e as redes sociais do outro. */
 
-/* Para que todo o header ocupe uma area maior, setaremos 100% de width e max-width: 1440px;. Sendo assim, se diminuirem a tela, ele ocupará 100% da tela, caso aumentem, ocupará somenteo necessário. 
-    Estando no meio, por conta do seletor e propriedade "Align-items: center". */
+/* Para que todo o header ocupe uma area maior, setaremos 100% de width e max-width: 1440px;. 
+Sendo assim, se diminuirem a tela, ele ocupará 100% da tela, caso aumentem, ocupará somenteo necessário. 
+Estando no meio, por conta do seletor e propriedade "Align-items: center". */
 
-header {
+header { /*  Aqui colocamos os elementos um ao lado do outro, com display e align items. */ 
     display: flex;
     align-items: center;
-    column-gap: 64px;
+    column-gap: 64px; /* Afastando os elementos. */ 
 
-    width: 100%;
-    max-width: 1440px;
-    padding-top: 24px;
+    width: 100%;    /* Ocupando 100% do container */ 
+    max-width: 1440px; /* Porém, pre-definido até 1440px de largura. */
+    padding-top: 24px; /* Para não ficar colado ao topo. */
 }
 
-/* Logo - Estilizando a logo para que fique do tamanho adequado e no local correto. */
+/* Logo */
 header img {
-    width: 70px;
-    height: auto;
+    width: 70px; /* Para que fique do tamanho adequado */
+    height: auto; /* Segue o tamanho já estabelecido em outros elementos. */
 }
 
-.navigation {
+.navigation { /* Para que fique lado a lado e espaçado. */
     display: flex;
     align-items: center;
     column-gap: 48px;
 
-    list-style: none;
+    list-style: none; /* Retirando o bulets */
 }
 
-/* Aqui setamos algumas propriedade para o menu. Sendo assim. terá uma fonte de 14px, com peso de 300, com espaçamento de 2px e caixalta.  */
+/* Aqui setamos algumas propriedade para o menu. 
+Sendo assim. terá uma fonte de 14px, com peso de 300, com espaçamento de 2px e caixalta.  */
 .navigation-link {
-    font-size: 14px;
+    font-size: 14px;    
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;
 
-    position: relative;
+    position: relative; /* Position relativo, para que o after seja relativo ao LI. */
 }
 
 /* Efeitos Menu */
-/*  Aqui quando selecionado mudará para a cor referida */
 
-.navigation-link:hover {
+.navigation-link:hover { /* Efeito para mudar a cor natural do elemento. */
     color: var(--red);
 }
 
-/*  Utilizamos o pseudo-elemento "After", para aparecer uma barrinha embaixo dos elemento e quando passar a seta realizar o efeito. */
-.navigation-link::after {
+/*  Utilizamos o pseudo-elemento "After", para aparecer uma barra embaixo dos elemento e quando passar a seta realizar o efeito. */
+
+.navigation-link::after { 
     content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
+    position: absolute; 
+    left: 0; 
+    bottom: -2px; /* Para que ele renderize embaixo do link. */
 
-    width: 60%;
-    height: 1px;
-    background: var(--red);
+    width: 60%; /* Sempre 60% da largura do elemento. */
+    height: 1px; /* Para que fique com 1px de altura a barra. */
+    background: var(--red); /* Cor da barrinha. */
 
-    transform: scaleX(0);
+    transform: scaleX(0); /* Efeito na escala de X. */
     transform-origin: right;
     /*Crescerá em um sentido e diminuirá em outro.*/
-    transition: transform 0.5s;
+    transition: transform 0.5s; /* Tempo do efeito. */
 }
 
 /* Aqui, quando ocorrer um "Hover" no elemento, o after terá as seguintes propriedades. */
 
 .navigation-link:hover::after {
-    transform: scaleX(1);
+    transform: scaleX(1); /* Efeito na escala de X, com valor 1 para o efeito. */
     transform-origin: left;
     /*Crescerá em um sentido e diminuirá em outro.*/
 }
 
 
-/* Aqui setamos algumas propriedade para que os ícones das redes sociais, para que fiquem a direita e que os elementos fiquem lado a lado.  */
+/* Aqui setamos algumas propriedade para que os ícones das redes sociais, 
+para que fiquem a direita e que os elementos fiquem lado a lado.  */
 
 .navigation-social {
-    margin-left: auto;
-    display: flex;
+    margin-left: auto; /* Acaba ficando com os elementos para a direita*/
+    display: flex;  
     align-items: center;
-    column-gap: 24px;
+    column-gap: 24px; /* Espaçamento. */ 
 }
 
-/* Para que os SVGs não sumam da tela, temos que setar as propriedade próprias para eles. */
+/* Para que os SVGs não sumam da tela, 
+temos que setar as propriedade próprias para eles. */
 
 .navigation-social svg {
-    width: 20px;
+    width: 20px; /* Tamanho dos SVGs, largura e altura.. */
     height: 20px;
-    opacity: 0.6;
+    opacity: 0.6; /* Aqui eles ficaram um pouco opaco. */
 
-    transition: all 0.4s;
+    transition: all 0.4s; 
     /* Utilizamos o transition, para ficar mais fluido o efeito. */
 }
 
 /* Efeito de "selecionado" aos ícones.*/
 
-.navigation-social svg:hover {
-    opacity: 1;
-    transform: translateY(-5px);
-    cursor: pointer;
+.navigation-social svg:hover { 
+    opacity: 1; /* Quando ocorrer o hover, a opacidade volta ao normal. */
+    transform: translateY(-5px); /* Para que o elemento suba. */
+    cursor: pointer; /* Cursor de mãozinha. */
 }

@@ -24,6 +24,10 @@
 
 /* Linkamos no HEAD do HTML, fontes do Google e utilizaremos a fonte "Mukta", sans-serif. Utilizando na tag color a variável que setamos no root. */
 
+body{ /* Para que o footer fique embaixo. */
+    height: 100vh;
+}
+
 body,
 button,
 a {
@@ -40,17 +44,23 @@ button:hover {
 }
 
 /* Seção APP */
-/* Setamos o display flex, para utilizar os elementos em coluna. */
-#app {
+
+#app {  /* Setamos o display flex, para utilizar os elementos em coluna. */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Aqui podia ser row, dependendo do layout desejado */
+    align-items: center; /* Centraliza os elementos. */
     min-height: 100vh; /* Para ocupar toda a altura da visualização */
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Para que ocupe 100% da largura. */
+    height: 100%; /* Para que ocupe 100% da altura. */
 }
 
 /* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 @media (min-width: 1066px)
 { .container { padding-left: calc((100% - 960px) / 2); padding-right: calc((100% - 960px) / 2); } }
