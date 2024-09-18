@@ -1,4 +1,4 @@
-Site para um possível filme do jogo Grand Chase
+Site para um possível filme do jogo Grand Chase.
 
 
 💻 Projeto
@@ -14,5 +14,6 @@ CSS
  Váriaveis do css no :root
  Uso do CSS Flexbox
  Efeitos com a propriedade transform do css
+ Caso deseja receber a documentação do projeto, entre em contato. 
 --------------------------
 
