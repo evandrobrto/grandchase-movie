@@ -1,0 +1,71 @@
+@import url(header.css);
+@import url(background.css);
+@import url(main.css);
+@import url(story.css);
+@import url(chars.css);
+@import url(kingdows.css);
+
+/* Setamos as seguintes propriedades para retirar as propriedades padrão do navegador. */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Aqui setamos algumas cores, para melhorar a facilidade de estilizar butões, letras, etc. */
+
+:root {
+    --text: #EDF1F7;
+    --red: #8511c9;
+    --blue: #0041C2;
+    --green: #eef0ee;
+    --yellow: #ffc12b;
+}
+
+/* Linkamos no HEAD do HTML, fontes do Google e utilizaremos a fonte "Mukta", sans-serif. Utilizando na tag color a variável que setamos no root. */
+
+body{ /* Para que o footer fique embaixo. */
+    height: 100vh;
+}
+
+body,
+button,
+a {
+    color: var(--text);
+    font: 400 1rem "Mukta", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Seção APP */
+
+#app {  /* Setamos o display flex, para utilizar os elementos em coluna. */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos. */
+    min-height: 100vh; /* Para ocupar toda a altura da visualização */
+    width: 100%; /* Para que ocupe 100% da largura. */
+    height: 100%; /* Para que ocupe 100% da altura. */
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1066px)
+{ .container { padding-left: calc((100% - 960px) / 2); padding-right: calc((100% - 960px) / 2); } }
+@media (min-width: 1440px)
+{ .container { padding-left: calc((100% - 1200px) / 2); padding-right: calc((100% - 1200px) / 2); } } 
+
+
+

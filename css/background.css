@@ -1,0 +1,33 @@
+/* Tags para o Video de Fundo */
+ 
+    /* Com as propriedades selecionadas, deixará o video fixado, ocupando toda a página, setando todos os lados a 0 e no fundo das demais informações do site. */
+
+    #bg-video{
+        position: fixed;
+        z-index: -1;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+        /* Aqui cortamos o vídeo com a tag "object-fit", para que video fique correto na página, para que não estique tanto na largura, quanto na altura. */
+    
+    #bg-video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+        /* Colocando efeito sombreado no vídeo, utilizando o pseudoelemento "After". Replicaremos o efeito com a mesma largura/altura do vídeo.
+        Utilizando a tag "Background" com a propriedade "linear-gradiente". */
+    
+        #bg-video::after {
+            content: '';
+            position: absolute; /* Usar absolute para garantir o posicionamento correto */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+            z-index: 1; /* Ajustar o z-index para que o sombreado apareça corretamente */
+        }

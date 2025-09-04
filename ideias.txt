@@ -1,0 +1,44 @@
+Ideias 
+
+@media (min-width: 1066px)
+{ .container { padding-left: calc((100% - 960px) / 2); padding-right: calc((100% - 960px) / 2); } }
+@media (min-width: 1440px)
+{ .container { padding-left: calc((100% - 1200px) / 2); padding-right: calc((100% - 1200px) / 2); } } 
+
+Explicação das Alterações - chars
+flex-wrap: wrap: No #char-container, permite que os itens se movam para a linha seguinte quando o espaço não for suficiente.
+gap: 20px: Adiciona espaço entre os itens, ajudando a evitar que eles fiquem muito colados uns aos outros.
+width: calc(33.333% - 20px): Define a largura de cada main-char para ocupar aproximadamente um terço da largura disponível, descontando o espaço entre os itens. Ajuste conforme necessário para garantir que os itens se ajustem corretamente.
+max-width: 266px: Garante que a largura máxima dos itens não ultrapasse o valor especificado, mantendo a consistência visual.
+
+1- Ideia para o História, utilizar o granchase weblogo no meio da página, após isso, colocar a história
+do granchase.
+
+1- Utilizar outra fonte para a história.
+
+
+Para adicionar uma imagem de fundo em HTML e CSS, pode-se utilizar a propriedade background-image e especificar o endereço da imagem na etiqueta inicial do elemento BODY. 
+Para isso, pode-se:
+Especificar a tag na qual se deseja adicionar a imagem
+Usar o url() para informar ao CSS a localização da imagem
+Dentro dos parênteses, indicar o caminho para a imagem
+Não esquecer do ponto e vírgula 
+Por exemplo, background-image: url(images/sunset.png). 
+Para evitar que a imagem se repita, pode-se adicionar a propriedade background-repeat: no-repeat;. 
+Para fazer com que a imagem de fundo preencha a tela inteira, pode-se usar a propriedade background-size: cover;. 
+Para alterar a cor do plano de fundo, pode-se utilizar a propriedade background-color. 
+
+
+
+Preludio:
+Como Vermécia continuou sofrendo pela guerra, a rainha de Serdin então percebeu que nenhum dos reinos poderia se dar ao luxo de enviar seus soldados atrás de Cazeaje. Canaban e Serdin ainda estavam se reconstruindo e sofrendo vários ataques de monstros. Seus soldados eram poucos, estavam exaustos e eram necessários para proteger os reinos. A solução seria criar uma pequena equipe de elite, um grupo especial com os guerreiros mais valorosos de cada reino, jovens que tivessem acabado de terminar sua formação e que pudessem partir para caçar a Rainha das Trevas. Assim nasceu a Grand Chase, a equipe da Grande Caçada!
+Coube a Comandante Lothos buscar um guerreiro de Canaban e um mago de Serdin. Cada reino, então, enviou uma jovem garota para cumprir esta missão. Quando os elfos de Eryuell também escolheram sua enviada, a Grand Chase iniciou suas aventuras, buscando caçar e derrotar todas as forças do mal! As três guerreiras, Elesis, Lire e Arme.
+Antes da formação da Grand Chase, Elesis competiu contra o filho de Depas Fahrenwhite, Gerard, pela liderança dos Cavaleiros Vermelhos.
+No fim, Elesis venceu a batalha pela liderança e foi nomeada a nova líder dos Cavaleiros Vermelhos.
+Lire era um membro dos Elfos de Eryuell e foi enviada para juntar-se à Grande Chase.
+Sua amiga de infância, Myrielle Ariaden, sempre quis deixar a Ilha de Eryuell mas, quando essa chance foi parar em sua amiga Lire, Myrielle disse para ela ver o resto do mundo por ela.
+Antes da formação da Grand Chase, Arme era um membro da Academia dos Magos Violeta.
+
+
+
+-------------------------------------------
