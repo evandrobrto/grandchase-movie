@@ -23,6 +23,13 @@
         <video class="video" loop autoplay muted>
             <source src="./assets/video/gc1.mp4" type="video/mp4">
         </video>
+
+        <!-- Música de fundo -->
+        <audio id="bg-music" autoplay loop>
+        <source src="./assets/audio/HOPE.mp3" type="audio/mp3">
+        Seu navegador não suporta áudio.
+    
+    </audio>
     </section>
     <!-- Header - Esta seção terá a logo do nosso site, a NavBar com o menu e os links para nossas redes sociais. -->
     <section id="app">
@@ -103,5 +110,17 @@
     </footer>
 
 </body>
+
+<!-- Música de fundo ao clicar em qualquer local -->
+<script>
+document.addEventListener("click", function() {
+    let music = document.getElementById("bg-music");
+    if (music.paused) {
+        music.play();
+    };
+
+    music.volume = 0.1; // Diminuir o volume em 50%%
+});
+</script>
 
 </html>
